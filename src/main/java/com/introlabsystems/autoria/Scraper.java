@@ -13,7 +13,7 @@ public class Scraper {
         var links = categories.select("a");
         for (int i = 0; i < COUNT; i++) {
             String link = links.get(i).absUrl("href");
-            System.out.println(link);
+            var model = new Model(link);
         }
     }
 }
