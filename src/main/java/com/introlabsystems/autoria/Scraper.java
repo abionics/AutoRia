@@ -5,9 +5,15 @@ import org.jsoup.Jsoup;
 import java.io.IOException;
 
 public class Scraper {
-    Scraper() throws IOException {
+    private static final int COUNT = 5;
+
+    static void scrap() throws IOException {
         var document = Jsoup.connect("https://auto.ria.com/").get();
-        var elements = document.selectFirst("#catalogs-type-reviews .seo-catalog-s");
-        System.out.println(elements.html());
+        var categories = document.selectFirst("#catalogs-type-reviews .seo-catalog-s");
+        var links = categories.select("a");
+        for (int i = 0; i < COUNT; i++) {
+            String link = links.get(i).absUrl("href");
+            System.out.println(link);
+        }
     }
 }
