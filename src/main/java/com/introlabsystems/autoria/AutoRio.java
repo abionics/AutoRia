@@ -17,6 +17,7 @@ public class AutoRio {
         for (int i = 0; i < COUNT; i++) {
             String link = links.get(i).absUrl("href");
             var producer = new Producer(link);
+            producer.scrap();
         }
     }
 

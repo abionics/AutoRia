@@ -11,6 +11,9 @@ public class Producer {
 
     Producer(String url) throws IOException {
         producerDocument = Jsoup.connect(url).get();
+    }
+
+    void scrap() throws IOException {
         openPage(1);
         openPage(3);
         openPage(5);
@@ -18,13 +21,11 @@ public class Producer {
 
     void openPage(int page) throws IOException {
         var link = producerDocument.baseUri() + "?page=" + page;
-        System.out.println(link);
+        System.out.println("page: " + link);
         var document = Jsoup.connect(link).get();
         var cars = document.select("h3.reviews-cars_name_mob > a");
-        System.out.println(cars.size());
         for (Element car : cars) {
             Car.scrap(car.absUrl("href"));
         }
-        System.exit(0);
     }
 }
