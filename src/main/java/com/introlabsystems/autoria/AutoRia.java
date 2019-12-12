@@ -5,7 +5,7 @@ import org.jsoup.Jsoup;
 import java.io.File;
 import java.io.IOException;
 
-public class AutoRio {
+public class AutoRia {
     private static final int COUNT = 5;
     static final File RESULT_FILE = new File("result.csv");
 

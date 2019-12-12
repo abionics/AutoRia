@@ -13,7 +13,7 @@ public class Car {
         int to = title.indexOf(" от");
         String name = title.substring(17, to);
         String info = document.selectFirst("div.review-text > p").text().strip().replaceAll("\"", "'");
-        var writer = new BufferedWriter(new FileWriter(AutoRio.RESULT_FILE, true));
+        var writer = new BufferedWriter(new FileWriter(AutoRia.RESULT_FILE, true));
         writer.write("\"" + url + "\",\"" + name + "\",\"" + info + "\"\n");
         writer.close();
     }
