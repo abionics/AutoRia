@@ -2,6 +2,7 @@ package com.introlabsystems.autoria;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 import java.io.IOException;
 
@@ -19,5 +20,11 @@ public class Producer {
         var link = producerDocument.baseUri() + "?page=" + page;
         System.out.println(link);
         var document = Jsoup.connect(link).get();
+        var cars = document.select("h3.reviews-cars_name_mob > a");
+        System.out.println(cars.size());
+        for (Element car : cars) {
+            Car.scrap(car.absUrl("href"));
+        }
+        System.exit(0);
     }
 }
