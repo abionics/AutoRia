@@ -20,7 +20,7 @@ public class ResultWriter {
     }
 
     public void write(List<Car> cars) {
-        if (!cars.isEmpty()) {
+        if (cars.isEmpty()) {
             return;
         }
         try {
@@ -32,7 +32,6 @@ public class ResultWriter {
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());
-            return;
         }
     }
 }
