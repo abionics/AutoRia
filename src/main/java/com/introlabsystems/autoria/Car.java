@@ -12,7 +12,11 @@ public class Car {
         String title = document.title();
         int to = title.indexOf(" от");
         String name = title.substring(17, to);
-        String info = document.selectFirst("div.review-text > p").text().strip().replaceAll("\"", "'");
+        String info = document.selectFirst("div.review-text > p")
+                .text()
+                .strip()
+                .replaceAll("\"", "'")
+                .replaceAll("\n", " ");
         var writer = new BufferedWriter(new FileWriter(AutoRia.RESULT_FILE, true));
         writer.write("\"" + url + "\",\"" + name + "\",\"" + info + "\"\n");
         writer.close();

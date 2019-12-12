@@ -21,7 +21,7 @@ public class Producer {
 
     void openPage(int page) throws IOException {
         var link = producerDocument.baseUri() + "?page=" + page;
-        System.out.println("page: " + link);
+        System.out.println("Process " + link);
         var document = Jsoup.connect(link).get();
         var cars = document.select("h3.reviews-cars_name_mob > a");
         for (Element car : cars) {
