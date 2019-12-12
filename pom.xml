@@ -39,6 +39,6 @@
                     <release>11</release>
                 </configuration>
             </plugin>
-    </plugins>
+        </plugins>
     </build>
 </project>
