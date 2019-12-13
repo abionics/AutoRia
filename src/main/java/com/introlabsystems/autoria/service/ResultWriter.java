@@ -1,6 +1,8 @@
 package com.introlabsystems.autoria.service;
 
 import com.introlabsystems.autoria.model.Car;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,6 +13,7 @@ import java.util.List;
 public class ResultWriter {
 
     private static final File RESULT_FILE = new File("result.csv");
+    private static final String[] COLUMNS = new String[]{"url", "name", "description"};
 
     private void recreateFile() throws IOException {
         if (RESULT_FILE.exists()) {
@@ -25,10 +28,14 @@ public class ResultWriter {
         }
         try {
             recreateFile();
+            BufferedWriter writer = new BufferedWriter(new FileWriter(RESULT_FILE, true));
+            CSVPrinter printer = new CSVPrinter(writer, CSVFormat.DEFAULT.withHeader(COLUMNS));
             for (Car car : cars) {
-                try (var writer = new BufferedWriter(new FileWriter(RESULT_FILE, true))) {
-                    writer.write("\"" + car.getUrl() + "\",\"" + car.getName() + "\",\"" + car.getDescription() + "\"\n");
-                }
+                printer.printRecord(
+                        car.getUrl(),
+                        car.getName(),
+                        car.getDescription()
+                );
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());

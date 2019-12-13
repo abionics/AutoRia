@@ -2,6 +2,7 @@ package com.introlabsystems.autoria.service;
 
 import com.introlabsystems.autoria.model.Car;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 
 import java.util.List;
 import java.util.regex.Pattern;
@@ -23,7 +24,7 @@ class AutoRiaParser {
     private static final String QUOTE = "'";
 
     List<String> parseCategories(Document document) {
-        var categories = document.selectFirst("#catalogs-type-reviews .seo-catalog-s");
+        Element categories = document.selectFirst("#catalogs-type-reviews .seo-catalog-s");
         return categories.select("a")
                 .stream()
                 .map(x -> x.absUrl("href"))
