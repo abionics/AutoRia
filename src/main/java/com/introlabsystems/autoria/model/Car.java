@@ -13,8 +13,19 @@ public class Car {
     private String description;
     private BigDecimal mark;
 
+    protected Car() {
+    }
+
+    public Car(String url, String name, String description, BigDecimal mark) {
+        this.url = url;
+        this.name = name;
+        this.description = description;
+        this.mark = mark;
+    }
+
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }

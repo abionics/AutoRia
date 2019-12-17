@@ -1470,3 +1470,158 @@
 10:34:45,169  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
 10:34:47,428  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 10:34:48,182  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+12:59:39,380  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+12:59:39,869  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+12:59:40,018  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+12:59:40,077  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+12:59:40,078  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+12:59:40,079  INFO pooling:129 - HHH10001003: Autocommit mode: false
+12:59:40,082  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+12:59:40,280  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+12:59:40,993  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12:59:41,414  INFO DefaultDeleteEventListener:220 - HHH000114: Handling transient entity in delete processing
+12:59:41,602  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+12:59:41,607  INFO AutoRiaScraper:71 - Tests have been passed
+13:01:33,870  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:01:34,531  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:01:34,635  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:01:34,677  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:01:34,678  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:01:34,679  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:01:34,683  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:01:34,878  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:01:35,644  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:01:36,304  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:01:36,309  INFO AutoRiaScraper:75 - Tests have been passed
+13:03:20,413  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:03:21,677  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:03:22,064  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:03:22,123  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:03:22,125  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:03:22,131  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:03:22,138  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:03:22,579  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:03:24,106  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:03:25,131  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:03:25,140  INFO AutoRiaScraper:74 - Tests have been passed
+13:03:44,849  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:03:45,899  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:03:46,265  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:03:46,277  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:03:46,278  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:03:46,279  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:03:46,283  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:03:46,626  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:03:48,861  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:03:49,574  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:03:49,582  INFO AutoRiaScraper:76 - Tests have been passed
+13:04:04,415  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:04:05,433  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:04:05,726  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:04:05,732  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:04:05,733  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:04:05,733  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:04:05,739  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:04:06,064  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:04:07,402  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:04:08,395  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:04:08,399  INFO AutoRiaScraper:76 - Tests have been passed
+13:04:20,511  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:04:21,439  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:04:21,645  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:04:21,653  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:04:21,654  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:04:21,655  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:04:21,659  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:04:21,950  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:04:22,928  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:04:23,890  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:04:23,896  INFO AutoRiaScraper:76 - Tests have been passed
+13:04:37,588  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:04:38,572  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:04:38,828  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:04:38,835  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:04:38,836  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:04:38,837  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:04:38,843  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:04:39,147  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:04:40,187  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:04:41,156  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:04:41,163  INFO AutoRiaScraper:76 - Tests have been passed
+13:04:54,521  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:04:55,689  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:04:56,060  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:04:56,067  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:04:56,071  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:04:56,072  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:04:56,082  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:04:56,510  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:04:57,566  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:04:58,526  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:04:58,531  INFO AutoRiaScraper:76 - Tests have been passed
+13:05:08,451  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:05:09,432  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:05:09,843  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:05:09,861  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:05:09,861  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:05:09,862  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:05:09,879  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:05:10,282  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:05:11,570  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:05:12,935  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:05:12,944  INFO AutoRiaScraper:76 - Tests have been passed
+13:06:07,493  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:06:08,459  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:06:08,665  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:06:08,674  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:06:08,674  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:06:08,675  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:06:08,678  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:06:08,897  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:06:09,889  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:06:10,784  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:06:10,790  INFO AutoRiaScraper:76 - Tests have been passed
+13:06:35,763  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:06:36,684  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:06:36,848  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:06:36,855  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:06:36,856  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:06:36,856  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:06:36,859  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:06:37,068  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:06:38,138  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:06:39,009  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:06:39,013  INFO AutoRiaScraper:74 - Tests have been passed
+13:14:55,606  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:14:56,233  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:14:56,415  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:14:56,426  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:14:56,427  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:14:56,427  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:14:56,430  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:14:56,690  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:14:57,778  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:14:58,514  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:14:58,526  INFO AutoRiaScraper:74 - Tests have been passed
+13:15:35,733  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:15:36,214  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:15:36,372  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:15:36,378  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:15:36,379  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:15:36,379  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:15:36,381  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:15:36,605  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:15:37,606  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:15:38,462  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:15:38,468  INFO AutoRiaScraper:74 - Tests have been passed
+13:15:54,889  INFO Version:46 - HHH000412: Hibernate Core {5.4.9.Final}
+13:15:55,348  INFO Version:49 - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+13:15:55,494  WARN pooling:72 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+13:15:55,499  INFO pooling:115 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://192.168.88.84:5020/test]
+13:15:55,500  INFO pooling:124 - HHH10001001: Connection properties: {user=root, password=****}
+13:15:55,501  INFO pooling:129 - HHH10001003: Autocommit mode: false
+13:15:55,505  INFO DriverManagerConnectionProviderImpl:249 - HHH000115: Hibernate connection pool size: 20 (min=1)
+13:15:55,710  INFO Dialect:172 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+13:15:56,580  INFO JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:15:57,361  INFO pooling:418 - HHH10001008: Cleaning up connection pool [jdbc:mysql://192.168.88.84:5020/test]
+13:15:57,365  INFO AutoRiaScraper:74 - Tests have been passed

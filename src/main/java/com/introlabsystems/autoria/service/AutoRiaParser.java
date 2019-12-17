@@ -37,12 +37,7 @@ class AutoRiaParser {
         String name = parseName(document);
         String description = parseDescription(document);
         BigDecimal mark = parseMark(document);
-        Car car = new Car();
-        car.setUrl(url);
-        car.setName(name);
-        car.setDescription(description);
-        car.setMark(mark);
-        return car;
+        return new Car(url, name, description, mark);
     }
 
     private String parseName(Document document) {

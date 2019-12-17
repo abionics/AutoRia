@@ -3,6 +3,7 @@ package com.introlabsystems.autoria.dao;
 import com.introlabsystems.autoria.model.Car;
 import com.introlabsystems.autoria.utils.HibernateSessionFactoryUtil;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
@@ -12,13 +13,15 @@ import javax.persistence.criteria.Root;
 import java.util.List;
 
 public class CarDAO {
+    
+    private SessionFactory sessionFactory = HibernateSessionFactoryUtil.getSessionFactory();
 
     public Car findById(int id) {
-        return HibernateSessionFactoryUtil.getSessionFactory().openSession().get(Car.class, id);
+        return sessionFactory.openSession().get(Car.class, id);
     }
 
     public Car findByUrl(String url) {
-        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Car> criteria = builder.createQuery(Car.class);
         Root<Car> root = criteria.from(Car.class);
@@ -30,7 +33,7 @@ public class CarDAO {
     }
 
     public void save(Car Car) {
-        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.save(Car);
         transaction.commit();
@@ -38,7 +41,7 @@ public class CarDAO {
     }
 
     public void update(Car Car) {
-        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.update(Car);
         transaction.commit();
@@ -46,7 +49,7 @@ public class CarDAO {
     }
 
     public void delete(Car Car) {
-        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(Car);
         transaction.commit();
@@ -54,6 +57,6 @@ public class CarDAO {
     }
 
     public List<Car> findAll() {
-        return (List<Car>) HibernateSessionFactoryUtil.getSessionFactory().openSession().createQuery("From Car").list();
+        return (List<Car>) sessionFactory.openSession().createQuery("From Car").list();
     }
 }
