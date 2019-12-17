@@ -4,6 +4,7 @@ import com.introlabsystems.autoria.model.Car;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -17,6 +18,7 @@ class AutoRiaParser {
     private static final int START_CAR_NAME_INDEX = 17;
 
     private static final String DESCRIPTION_SELECTOR = "div.review-text > p";
+    private static final String PRICE_SELECTOR = "body > div.app-content > div > div.page.m-padding > main > div.app-feedback-box.box-panel > section > article > div > div.wrapper > div.rev-search-card_rat-i.rev-search-card_rat-i_main > div > strong";
     private static final String SEPARATOR = " от";
 
     private static final Pattern QUOTE_PATTERN = Pattern.compile("\"");
@@ -32,14 +34,20 @@ class AutoRiaParser {
     }
 
     Car parseCar(Document document, String url) {
-        String title = substring(document.title(), START_CAR_NAME_INDEX);
-        String name = substringBeforeLast(title, SEPARATOR);
+        String name = parseName(document);
         String description = parseDescription(document);
+        BigDecimal mark = parseMark(document);
         Car car = new Car();
         car.setUrl(url);
         car.setName(name);
         car.setDescription(description);
+        car.setMark(mark);
         return car;
+    }
+
+    private String parseName(Document document) {
+        String title = substring(document.title(), START_CAR_NAME_INDEX);
+        return substringBeforeLast(title, SEPARATOR);
     }
 
     private String parseDescription(Document document) {
@@ -47,5 +55,10 @@ class AutoRiaParser {
         description = QUOTE_PATTERN.matcher(description.trim()).replaceAll(QUOTE);
         description = NEW_LINE_PATTERN.matcher(description).replaceAll(SPACE);
         return description;
+    }
+
+    private BigDecimal parseMark(Document document) {
+        String mark = document.select(PRICE_SELECTOR).text();
+        return new BigDecimal(mark);
     }
 }

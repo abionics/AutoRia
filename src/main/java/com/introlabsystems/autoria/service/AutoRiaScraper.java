@@ -1,6 +1,7 @@
 package com.introlabsystems.autoria.service;
 
 import com.introlabsystems.autoria.model.Car;
+import org.apache.log4j.Logger;
 import org.jsoup.nodes.Document;
 
 import java.util.ArrayList;
@@ -10,7 +11,9 @@ import java.util.stream.Collectors;
 
 public class AutoRiaScraper {
 
-    private static final int CATEGORIES_LIMIT = 5;
+    private static Logger log = Logger.getLogger(AutoRiaScraper.class);
+
+    private static final int CATEGORIES_LIMIT = 1;
     private static final String DOMAIN = "https://auto.ria.com/";
     private static final AutoRiaParser PARSER = new AutoRiaParser();
     private static final String CATEGORY_PAGE_FORMAT = "%s?page=%d";
@@ -25,6 +28,7 @@ public class AutoRiaScraper {
         Document mainPageDocument = documentDownloader.get(DOMAIN);
         List<String> categoriesLinks = PARSER.parseCategories(mainPageDocument);
         if (categoriesLinks.isEmpty()) {
+            log.warn("Domain doesnt have categories!");
             return Collections.emptyList();
         }
         List<Car> cars = new ArrayList<>();
@@ -54,7 +58,7 @@ public class AutoRiaScraper {
     }
 
     private Car scrapeCar(String linkToCar) {
-        System.out.println(linkToCar);
+        log.info("Scrape car " + linkToCar);
         Document document = documentDownloader.get(linkToCar);
         return PARSER.parseCar(document, linkToCar);
     }

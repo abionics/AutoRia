@@ -15,6 +15,8 @@ public class ResultWriter {
     private static final File RESULT_FILE = new File("result.csv");
     private static final String[] COLUMNS = new String[]{"url", "name", "description"};
 
+    CarService carService = new CarService();
+
     private void recreateFile() throws IOException {
         if (RESULT_FILE.exists()) {
             RESULT_FILE.delete();
@@ -36,6 +38,7 @@ public class ResultWriter {
                         car.getName(),
                         car.getDescription()
                 );
+                carService.saveCar(car);
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());
